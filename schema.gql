@@ -1,0 +1,22 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type SearchMeta {
+  total: Int
+}
+
+type SearchResult {
+  name: String
+  id: String
+  isSaved: Boolean
+}
+
+type Search {
+  meta: SearchMeta
+  data: [SearchResult!]
+}
+
+type Query {
+  searchUsers: Search!
+}

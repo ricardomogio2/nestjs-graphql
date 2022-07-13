@@ -1,0 +1,22 @@
+root = true
+
+# Default config
+[*]
+end_of_line = lf
+charset = utf-8
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Makefile
+[Makefile]
+indent_style = tab
+
+# YAML config
+[*.{yml,yaml}]
+indent_size = 2
+
+# JSON config
+[*.json]
+indent_size = 2
