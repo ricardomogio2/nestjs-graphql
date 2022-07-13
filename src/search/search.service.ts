@@ -35,7 +35,8 @@ export class SearchService {
       user.id = u.id;
       user.name = u.name;
 
-      // This is what I don't want to do, because it can be expensive.
+      // This is what I don't want to do, because it can be expensive
+      // In the real app this is a MongoDB operation. Although fast, it can slow down the performance
       user.isSaved = includes(savedUsersIds, user.id) ? true : false;
 
       return user;
